@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Layon de Souza Onofre | Portfolio</title>
+	<meta name="description" content="Coleção das minhas criações até hoje">
+	<meta name="author" content="Layon de Souza Onofre">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			var filterList = {
+				init: function() {
+					$('#portfoliolist').mixItUp({
+						selectors: {
+							target: '.portfolio',
+							filter: '.filter'
+						},
+						load: {
+							filter: '.cartao, .diversos, .divulgacao, .logo, .web'
+						}
+					});
+				}
+			};
+			filterList.init();
+		});
+	</script>
+</head>
+<body>
+	<div id="linha"></div>
+	<div class="container">
+		<div id="header">
+			<h1>Layon de Souza Onofre</h1>
+			<ul>
+				<li><a href="https://facebook.com/layon.onofre" target="_blank"><i class="fa fa-facebook-official fa-3x"></i></a></li>
+				<li><a href="https://linkedin.com/in/layondesouzaonofre" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+				<li><a href="https://github.com/layonsonofre/" target="_blank"><i class="fa fa-github fa-3x"></i></a></li>
+				<li><a href="mailto:layonsonofre@gmail.com" target="_blank"><i class="fa fa-envelope fa-3x"></i></a></li>
+				<li><a href="#" title="Rua Comandante Paulo Pinheiro Schimidt, 344, Apto. 01 - Uvaranas - Ponta Grossa - Paraná - Brasil"><i class="fa fa-map-marker fa-3x"></i></a></li>
+				<li><a href="#" title="+55 14 997 033 167"><i class="fa fa-phone fa-3x"></i></a></li>
+			</ul>
+		</div>
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter=".cartao, .diversos, .divulgacao, .logo, .web" data-sort="random">Todos</span></li>
+			<li><span class="filter" data-filter=".web">Web</span></li>
+			<li><span class="filter" data-filter=".logo">Logo</span></li>
+			<li><span class="filter" data-filter=".cartao">Cartão de Visita</span></li>
+			<li><span class="filter" data-filter=".divulgacao">Divulgação</span></li>
+			<li><span class="filter" data-filter=".diversos">Diversos</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/ejec.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">EJEC</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/weekend.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Startup Weekend Ponta Grossa</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/web/ejec.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">EJEC</a>
+							<span class="text-category">Web</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/labDeGaragem.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">EJEC | Lab de Garagem</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio cartao" data-cat="cartao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/cartao/mariaClara.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Disk Marmitex Maria Clara</a>
+							<span class="text-category">Cartão de Visita</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/web/ppz.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Pós-graduação em Zootecnia</a>
+							<span class="text-category">Web</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio diversos" data-cat="diversos">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/diversos/abadaLosBravos.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Abadá Los Bravos</a>
+							<span class="text-category">Diversos</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/bellMello.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bell Mello Turismo</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/web/eaic.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">EAIC</a>
+							<span class="text-category">Web</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio cartao" data-cat="cartao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/cartao/anaClaudia.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Ana Claudia Makeup</a>
+							<span class="text-category">Cartão de Visita</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio cartao" data-cat="cartao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/cartao/graficaEndereço.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Gráfica do Paulinho</a>
+							<span class="text-category">Cartão de Visita</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio diversos" data-cat="diversos">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/diversos/bolacha.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bolacha Chá Bar</a>
+							<span class="text-category">Diversos</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/barbearia.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Wesley Barbeiro</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/bazarDaGeo.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bazar da Geo</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/chopp.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Koch Bier - Sede?</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/engenharias.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Semana da Integralçai das Engenharias</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/farofa.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Original - Farofa Caseira</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio cartao" data-cat="cartao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/cartao/fortaleza.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Fortaleza Fertile Cereais</a>
+							<span class="text-category">Cartão de Visita</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/futebol.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Jogo Beneficente</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/granjeiro.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Granjeiro do Velosi</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/habitatsInovacao.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">1º SITE - Habitats da Inovação</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/adoradores.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">1º Adoradores Dance Fest</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/musicaAoVivo.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Koch Bier - Música ao Vivo</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/solarium.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Academia Solarium - Karate e Hapkido</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio divulgacao" data-cat="divulgacao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/divulgacao/tiposCerveja.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Koch Bier - Tipos de Cerveja</a>
+							<span class="text-category">Divulgação</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/chicosHotDog.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Chico's Hot Dog Lanches</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/compTalks.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">1ª SITE - CompTalks</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/eaic.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">EAIC</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/engenharias.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Semana de Integração das Engenharias</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/web/engenharias.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Semana de Integração das Engenharias</a>
+							<span class="text-category">Web</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/hotelRecantoDasGarças.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Hotel Recanto das Garças</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/o3ambiental.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">O3 Ambiental</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/skinaLanches.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Skina Lanches</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/swimgo.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">SwimGo</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/logo/tica.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">TICA</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/web/coideias.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">CoIdeias</a>
+							<span class="text-category">Web</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio cartao" data-cat="cartao">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/cartao/centraleve.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Centraleve Materiais de Construção</a>
+							<span class="text-category">Cartão de Visita</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/web/epehurcg.png" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">EPEHURCG</a>
+							<span class="text-category">Web</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
